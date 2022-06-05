@@ -1,0 +1,31 @@
+{
+  "name": "obsidian-plugin-api",
+  "version": "0.1.0",
+  "description": "Obsidian helper for inter-plugin API communication",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MunGell/plugin-api.git"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "obsidian-api",
+    "typescript"
+  ],
+  "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com> (https://github.com/MunGell)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MunGell/plugin-api/issues"
+  },
+  "homepage": "https://github.com/MunGell/plugin-api#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "obsidian": "^0.14.8",
+    "typescript": "4.4.4"
+  }
+}

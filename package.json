@@ -1,14 +1,15 @@
 {
-  "name": "obsidian-plugin-api",
+  "name": "@vanakat/plugin-api",
   "version": "0.1.0",
   "description": "Obsidian helper for inter-plugin API communication",
-  "main": "index.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MunGell/plugin-api.git"
+    "url": "git+https://github.com/vanakat/plugin-api.git"
   },
   "keywords": [
     "obsidian",
@@ -19,9 +20,9 @@
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com> (https://github.com/MunGell)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MunGell/plugin-api/issues"
+    "url": "https://github.com/vanakat/plugin-api/issues"
   },
-  "homepage": "https://github.com/MunGell/plugin-api#readme",
+  "homepage": "https://github.com/vanakat/plugin-api#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",

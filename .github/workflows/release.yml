@@ -1,4 +1,4 @@
-name: Release Build
+name: Release
 
 on:
   push:
@@ -7,11 +7,32 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: Create Release
+      ##################
+      # Checkout code
+      ###################
+      - uses: actions/checkout@v3
+
+      ##################
+      # Setup .npmrc file to publish to npm
+      # install dependencies, build and push to npm
+      ###################
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: |
+          npm install
+          npm run build
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      ##################
+      # Create GitHub Release
+      ###################
+      - name: Create release
         id: create_release
         uses: actions/create-release@v1
         env:

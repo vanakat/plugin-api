@@ -15,3 +15,7 @@ export function registerAPI(name: string, api: any, plugin: Plugin) {
         delete window['PluginApi'][name];
     });
 }
+
+export function pluginApi(name: string) {
+    return window['PluginApi'][name];
+}

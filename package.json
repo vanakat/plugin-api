@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/vanakat/plugin-api#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
-    "obsidian": "^0.14.8",
-    "typescript": "4.4.4"
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "obsidian": "^1.5.7-1",
+    "typescript": "5.4.5"
   }
 }

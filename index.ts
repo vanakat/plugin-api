@@ -1,4 +1,4 @@
-import {Plugin} from 'obsidian';
+import { Plugin, Notice } from 'obsidian';
 
 declare global {
     interface Window {
@@ -17,5 +17,9 @@ export function registerAPI(name: string, api: any, plugin: Plugin) {
 }
 
 export function pluginApi(name: string) {
-    return window['PluginApi'][name];
+    if ('PluginApi' in window && name in window['PluginApi']) {
+        return window['PluginApi'][name];
+    } else {
+        new Notice(`Plugin ${name} not found. Please install ${name} first.`)
+    }
 }

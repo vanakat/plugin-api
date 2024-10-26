@@ -1,6 +1,6 @@
 {
   "name": "@vanakat/plugin-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Obsidian helper for inter-plugin API communication",
   "main": "index.js",
   "types": "index.d.ts",
